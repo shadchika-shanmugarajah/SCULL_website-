@@ -1,0 +1,95 @@
+.partner_section {
+  padding: 60px 0;
+
+  .heading_container {
+    margin-bottom: 30px;
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      span {
+        color: #0056b3;
+      }
+    }
+    hr {
+      width: 60px;
+      height: 3px;
+      background: #0056b3;
+      border: none;
+      margin: 15px auto;
+    }
+  }
+
+  .partner_list {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2rem;
+    line-height: 2;
+    li {
+      padding-left: 1.5em;
+      position: relative;
+      &:before {
+        content: "✔";
+        color: green;
+        position: absolute;
+        left: 0;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.proposal_section {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+
+  .heading_container h2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    span {
+      color: #0073e6;
+    }
+    hr {
+      width: 60px;
+      height: 3px;
+      background: #0073e6;
+      border: none;
+      margin: 15px auto;
+    }
+  }
+
+  .proposal_card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+
+    .intro_text {
+      font-size: 1.15rem;
+      margin-bottom: 25px;
+      color: #333;
+      text-align: justify;
+    }
+
+    .proposal_list {
+      list-style: none;
+      padding-left: 0;
+
+      li {
+        font-size: 1.1rem;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        i {
+          color: #0073e6;
+          margin-right: 10px;
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    &:hover {
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    }
+  }
+}

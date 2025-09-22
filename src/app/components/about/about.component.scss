@@ -1,0 +1,38 @@
+@import '../../../styles.scss';
+
+// about section
+.about_section {
+    background-color: $primary2;
+    color: $white;
+  
+    .heading_container {
+      margin-bottom: 45px;
+    }
+  
+    .row {
+      align-items: center;
+    }
+  
+    .img-box {
+      img {
+        max-width: 100%;
+      }
+    }
+  
+    .detail-box {
+      h3 {
+        font-weight: bold;
+      }
+  
+      p {
+        margin-top: 15px;
+      }
+  
+      a {
+        @include hero_btn($primary1, $white, 10px, 45px, 0px);
+        margin-top: 15px;
+      }
+    }
+  }
+  
+  // end about section
