@@ -1,0 +1,14 @@
+<div class="photo-gallery">
+    <h2>Photo Gallery</h2>
+    <div class="carousel" (mouseenter)="pauseAuto()" (mouseleave)="resumeAuto()">
+        <button class="nav prev" type="button" (click)="prev()" aria-label="Previous">&#10094;</button>
+        <div class="viewport">
+            <div class="row">
+                <div class="cell" *ngFor="let idx of getVisibleIndices(); trackBy: trackByIndex">
+                    <img [src]="images[idx]" alt="Gallery Image" loading="lazy" decoding="async" />
+                </div>
+            </div>
+        </div>
+        <button class="nav next" type="button" (click)="next()" aria-label="Next">&#10095;</button>
+    </div>
+</div>

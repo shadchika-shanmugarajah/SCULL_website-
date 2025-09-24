@@ -222,13 +222,13 @@
   
     .img-box {
         text-align: center;
-      margin: 45px 0;
+      margin: 20px 0;
   
       img {
         // width: 100%;
-        width: 450px;
-        height: 450px;
-        
+        width: 420px;
+        height: 420px;
+        margin-top: -10px;
         animation: upDown 5s infinite;
       }
   
